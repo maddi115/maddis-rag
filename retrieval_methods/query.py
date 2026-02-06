@@ -4,7 +4,7 @@ Quick command-line query tool for Probability-Stasis RAG
 Usage: python3 query.py "your question here"
 """
 import sys
-from maddi_retrieval import ProbabilityStasisRAG
+from retrieval_methods import ProbabilityStasisRAG
 
 if len(sys.argv) < 2:
     print("Usage: python3 query.py \"your question\"")

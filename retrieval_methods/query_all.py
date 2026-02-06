@@ -3,9 +3,9 @@
 Multi-Method Query Tool - The Trinity
 """
 import sys
-from maddi_retrieval import ProbabilityStasisRAG, VectorSearch
+from retrieval_methods import ProbabilityStasisRAG, VectorSearch
 import importlib.util
-spec = importlib.util.spec_from_file_location("gradient", "maddi_retrieval/newv2Gradient_Proximity_Search_Rarity_Based_Chaining.py")
+spec = importlib.util.spec_from_file_location("gradient", "retrieval_methods/newv2Gradient_Proximity_Search_Rarity_Based_Chaining.py")
 gradient_module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gradient_module)
 GradientProximitySearch = gradient_module.GradientProximitySearch
