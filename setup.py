@@ -2,7 +2,7 @@ import os
 from setuptools import setup, find_packages
 
 setup(
-    name="maddi-retrieval",
+    name="retrieval-methods",
     version="0.1.0",
     author="agentmaddi",
     description="RAG system with probability-stasis filtering for stable, reliable results",
@@ -13,6 +13,7 @@ setup(
         "chromadb>=1.1.1",
         "sentence-transformers>=5.1.1",
         "numpy>=2.0.0",
+        "pandas>=2.0.0",
     ],
     python_requires=">=3.8",
     classifiers=[
