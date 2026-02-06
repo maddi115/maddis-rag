@@ -1,0 +1,15 @@
+# Maddi's Retrieval Framework - Quick Start
+
+## Run The Trinity (all 3 methods):
+python3 maddi_retrieval/query_all.py "your question here"
+
+## Run single methods:
+python3 maddi_retrieval/query.py "your question"
+
+## Examples:
+python3 maddi_retrieval/query_all.py "what does agentmaddi like to eat"
+python3 maddi_retrieval/query_all.py "what are agentmaddi's interests"
+
+## Requirements:
+- Activate venv first: source venv/bin/activate
+- Database location: databases/agentmaddi_chroma_db

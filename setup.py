@@ -2,7 +2,7 @@ import os
 from setuptools import setup, find_packages
 
 setup(
-    name="probability-stasis-rag",
+    name="maddi-retrieval",
     version="0.1.0",
     author="agentmaddi",
     description="RAG system with probability-stasis filtering for stable, reliable results",

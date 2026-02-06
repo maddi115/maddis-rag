@@ -3,9 +3,9 @@
 Multi-Method Query Tool - The Trinity
 """
 import sys
-from probability_stasis_rag import ProbabilityStasisRAG, VectorSearch
+from maddi_retrieval import ProbabilityStasisRAG, VectorSearch
 import importlib.util
-spec = importlib.util.spec_from_file_location("gradient", "newv2Gradient_Proximity_Search_Rarity_Based_Chaining.py")
+spec = importlib.util.spec_from_file_location("gradient", "maddi_retrieval/newv2Gradient_Proximity_Search_Rarity_Based_Chaining.py")
 gradient_module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gradient_module)
 GradientProximitySearch = gradient_module.GradientProximitySearch
@@ -19,7 +19,7 @@ query = " ".join(sys.argv[1:])
 # Initialize
 rag = ProbabilityStasisRAG(
     collection_name="agentmaddi_history",
-    persist_directory="./agentmaddi_chroma_db",
+    persist_directory="databases/agentmaddi_chroma_db",
     stasis_threshold=0.05,
     top_k=3
 )

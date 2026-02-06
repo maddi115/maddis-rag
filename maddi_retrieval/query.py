@@ -4,7 +4,7 @@ Quick command-line query tool for Probability-Stasis RAG
 Usage: python3 query.py "your question here"
 """
 import sys
-from probability_stasis_rag import ProbabilityStasisRAG
+from maddi_retrieval import ProbabilityStasisRAG
 
 if len(sys.argv) < 2:
     print("Usage: python3 query.py \"your question\"")
@@ -17,7 +17,7 @@ query = " ".join(sys.argv[1:])
 # Initialize RAG (using existing database)
 rag = ProbabilityStasisRAG(
     collection_name="agentmaddi_history",  # Your 9000-line database
-    persist_directory="./agentmaddi_chroma_db",
+    persist_directory="databases/agentmaddi_chroma_db",
     stasis_threshold=0.05,
     top_k=3
 )
